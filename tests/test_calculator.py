@@ -1,6 +1,7 @@
 """My Calculator Test"""
 
 from fractions import Fraction
+import pytest
 from calculator import add, subtract, divide, multiply
 
 
@@ -22,3 +23,9 @@ def test_division():
 def test_multiplication():
     """Test that addition function works"""
     assert multiply(Fraction(2), Fraction(2)) == 4
+
+
+def test_divide_by_zero():
+    """Test that division by zero raises an error"""
+    with pytest.raises(ZeroDivisionError, match="Cannot divide by zero"):
+        divide(Fraction(2), Fraction(0))

@@ -19,6 +19,8 @@ def multiply(multiplier: Fraction, multiplicand: Fraction) -> Fraction:
 
 def divide(dividend: Fraction, divisor: Fraction) -> Fraction:
     """Divide two numbers"""
+    if divisor == 0:
+        raise ZeroDivisionError("Cannot divide by zero")
     return dividend / divisor
 
 
