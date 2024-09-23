@@ -22,3 +22,7 @@ class Calculation:
     def calculate(self) -> Fraction:
         """Calculate the result of the operation"""
         return self.operation(self.var_one, self.var_two)
+
+    def __repr__(self):
+        """Return a simplified string representation of the calculation."""
+        return f"Calculation({self.var_one}, {self.var_two}, {self.operation.__name__})"
