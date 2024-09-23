@@ -10,7 +10,7 @@ class History:
     history: List[Calculation] = []
 
     @classmethod
-    def get_history(cls):
+    def get_history(cls) -> List[Calculation]:
         """Return the history of all calculations."""
         return cls.history
 
@@ -31,6 +31,6 @@ class History:
         cls.history.clear()
 
     @classmethod
-    def get_last_calculation(cls):
+    def get_last_calculation(cls) -> Calculation | None:
         """Return the last calculation performed."""
         return cls.history[-1] if cls.history else None
