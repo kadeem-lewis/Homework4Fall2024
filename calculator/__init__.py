@@ -36,10 +36,3 @@ class Calculator:
     def divide(dividend: Fraction, divisor: Fraction) -> Fraction:
         """Divide two numbers"""
         return Calculator.perform_calculation(dividend, divisor, divide)
-
-
-# Calculator is high level so it will need to have the operations in them so you can call Calculator.add() etc
-# Each operation will call the static factory method in the Calculation class along with one of the operations
-# The Calculation class needs to store the variables and operation because it needs to get added to history
-# Operations stored the basic functions for arithmetic operations
-# Calculation will
