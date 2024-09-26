@@ -11,17 +11,17 @@ def test_addition():
 
 
 def test_subtraction():
-    """Test that addition function works"""
+    """Test that subtraction function works"""
     assert subtract(Fraction(2), Fraction(2)) == 0
 
 
 def test_division():
-    """Test that addition function works"""
+    """Test that division function works"""
     assert divide(Fraction(2), Fraction(2)) == 1
 
 
 def test_multiplication():
-    """Test that addition function works"""
+    """Test that multiplication function works"""
     assert multiply(Fraction(2), Fraction(2)) == 4
 
 
